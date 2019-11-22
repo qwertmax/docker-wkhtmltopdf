@@ -12,5 +12,5 @@ docker build .
 
 
 ```bash
-docker run --rm qwertmax/docker-wkhtmltopdf -V
+docker run --rm -v $(pwd):/pdf-folder qwertmax/docker-wkhtmltopdf https://google.com pdf-folder/google.pdf
 ```
